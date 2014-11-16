@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Migration.Models.Phone>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_layout.cshtml";
+}
+
+<h2>Index</h2>
+
+@foreach (var phone in Model)
+{
+	<div>
+		Id: @phone.Id <br />
+		Name: @phone.Name <br />
+		Brand: @phone.Brand
+	</div>
+	<br />
+}
